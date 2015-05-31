@@ -64,6 +64,7 @@ Public Class frmPeliculas
     Private Sub cmdAceptar_Click(sender As Object, e As EventArgs) Handles cmdAceptar.Click
         'Si no tenemos ejemplar creamos solo la pelicula
         'sino hay que crear pelicula con ejemplar (transaccion)
+        'Nuevo comentario prueba git
         If Not Modificando Then
             Dim miPelicula As New Pelicula
             If miEjemplar.Formato = 0 Then 'si no se ha seleccionado crear un ejemplar creamos solo la pelicula
